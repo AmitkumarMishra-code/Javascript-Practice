@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    width: 50%;
+    height: 100vh;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    flex: 1 auto;
+    height: 100vh;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resizer {
+    height: 100vh;
+    width: 10px;
+    border: 1px solid black;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+}
+
+.resizer:hover,
+.resizer:active {
+    cursor: col-resize;
+}
